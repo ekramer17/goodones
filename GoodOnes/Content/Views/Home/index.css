@@ -1,0 +1,69 @@
+﻿body {
+    background: url("../../../Images/landing-bg.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -ms-filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/homeBg', sizingMethod='scale');
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/homeBg.jpg', sizingMethod='scale');
+}
+
+#background-top-small {
+    display:none;
+}
+
+.logo-main {
+    margin:145px auto 52px;
+}
+
+@media screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2), /* iPhone 4, iPhone 5 */
+       screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2), /* iPhone 6 */
+       screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3), /* iPhone 6+ */ 
+       screen and (device-width: 320px)     and (device-height: 640px)    and (-webkit-device-pixel-ratio: 2),     /* Galaxy S3 */
+       screen and (device-width: 320px)     and (device-height: 640px)    and (-webkit-device-pixel-ratio: 3),     /* Galaxy S4 */
+       screen and (device-width: 360px)     and (device-height: 640px)    and (-webkit-device-pixel-ratio: 3)      /* Galaxy S5, HTC One */ {
+    .logo-main {
+        margin:0 auto 52px;
+    }
+}
+
+.logo-main img {
+    width:100%;
+    max-width:336px;
+    margin:0 auto;
+    display:block;
+}
+
+li {
+    width: 227px;
+    height: 52px;
+    margin: 0 5px;
+}
+
+li a:link,
+li a:visited {
+    border:1px solid #fff;
+    text-decoration: none;
+    color: #fff;
+    display:table-cell;
+    vertical-align: middle;
+    width:inherit;
+    height:inherit;
+    font-family: 'Helvetica Neue Bold',Helvetica,Arial,'Lucida Grande',sans-serif;
+    font-size: 17px;
+    letter-spacing: 1.7px;
+}
+
+li a:hover {
+    border:1px solid #e31524;
+    background-color:#e31524;
+}
+
+.navbar-brand {
+    display:none !important;
+}
+
+.navbar-background {
+    background-image:url("");
+    height:auto;
+}

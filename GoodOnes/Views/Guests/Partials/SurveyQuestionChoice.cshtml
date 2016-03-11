@@ -1,0 +1,30 @@
+﻿@model string[]
+
+<div class="@String.Format("w-choice choice-{0}", Model.Length)">
+
+    @foreach(string s in Model)
+    {
+        <div class="o-choice">
+            
+            <div class="check">
+                <div>
+                    <div>
+                        &#10003;
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text">
+                <div>
+                    <div>
+                        @s
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    }
+
+</div>
+
+

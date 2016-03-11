@@ -1,0 +1,38 @@
+﻿@{
+    ViewBag.Title = "How It Works";
+}
+
+@section Styles
+{
+    <link type="text/css" rel="stylesheet" href="~/Content/Views/Guests/index.css">
+}
+
+<div class="text-center">
+
+    <p class="caption">HOW IT WORKS</p>
+
+    <div class="step-number">
+        <span style="display:table-cell;vertical-align:middle;text-align:center;background-color:#e1e1e1;border-radius:50%;font-weight:bold">1</span>
+    </div>
+
+    <p class="step-text">Pick Your Party</p>
+
+    <div class="step-number">
+        <span style="display:table-cell;vertical-align:middle;text-align:center;background-color:#e1e1e1;border-radius:50%;font-weight:bold">2</span>
+    </div>
+
+    <p class="step-text">
+        Take Our Survey
+        <br />
+        <span class="step-text-sub">(it's only 5 min)</span>
+    </p>
+
+    <div class="step-number">
+        <span style="display:table-cell;vertical-align:middle;text-align:center;background-color:#e1e1e1;border-radius:50%;font-weight:bold">3</span>
+    </div>
+
+    <p class="step-text">Bring a Friend</p>
+
+    @Html.ActionLink("LET'S GO!", "Party", "Guests", null, new { @class = "btn btn-standard" })
+
+</div>

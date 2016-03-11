@@ -1,0 +1,80 @@
+﻿@model GoodOnes.Models.Guests.SurveyViewModel
+
+@{
+    ViewBag.Title = "Survey";
+}
+
+@section Styles
+{
+    <link rel="stylesheet" href="~/Content/3balls.css">
+    <link rel="stylesheet" href="~/Content/Views/Guests/survey.css">
+}
+
+<div class="row box-container">
+    @for (int i = 0; i < Model.Questions.Count; ++i)
+    {
+        GoodOnes.Entities.Question q = Model.Questions[i];
+        string klass = String.Format("box{0}", i < 2 ? (i + 1) : 3);
+
+        <div class="question-box @klass">
+        
+            <input type="hidden" class="question-id" value="@q.ID">
+    
+            @switch (q.ControlType.ToUpper()[0])
+            {
+                case 'C':
+                    <div class="question">@q.Text</div>
+                    @Html.Partial("SurveyQuestionChoice", q.PossibleAnswers.Split(new char[] {'|'}));
+                    break;
+            }
+
+        </div>
+    }
+
+    <div class="box3">
+        <form id="name-form" role="form">
+            <div class="form-group">
+                <label for="first-name" class="control-label">What is your first name?</label>
+                <input type="text" class="form-control" id="first-name" name="first-name" required />
+            </div>
+            <div class="form-group">
+                <label for="last-name" class="control-label">What is your last name?</label>
+                <input type="text" class="form-control" id="last-name" name="last-name" required />
+            </div>
+            <a href="#" class="button panel-button" id="guest-name"><span>GO TO NEXT QUESTION</span></a>
+        </form>
+    </div>
+
+    <div class="box3 thank-you">
+        <div>&nbsp;</div>
+        <div>SURVEY COMPLETE</div>
+        <div>It's Party Time</div>
+        <a href="#" class="button panel-button" id="checkout">
+            <div class="spinner-3balls"></div>
+            <span>PURCHASE GUEST PASS</span>
+        </a>
+    </div>
+
+    <div class="box3 thank-you">
+        <div>&nbsp;</div>
+        <div>THANK YOU!</div>
+        <div>Purchase Complete</div>
+        <a href="#" class="button panel-button" id="rules"><span>CHECK OUT THE RULES</span></a>
+    </div>
+
+</div>
+
+@section Scripts
+{
+    <script type="text/javascript" src="~/Scripts/spinner-3balls.js"></script>
+    <script type="text/javascript" src="~/Scripts/bootstrap.validator.min.js"></script>
+    <script type="text/javascript" src="https://checkout.stripe.com/checkout.js"></script>
+    <script type="text/javascript" src="~/Scripts/Views/Guests/survey.js"></script>
+
+    <script>
+    var partyid = @Model.PartyID;
+    var rulesurl = "@Url.Action("Rules", "Guests", null, Request.Url.Scheme)";
+    var surveyurl = "@Url.Action("Survey", "Guests", null, Request.Url.Scheme)";
+    var publickey = "@Model.StripePublic";
+    </script>
+}

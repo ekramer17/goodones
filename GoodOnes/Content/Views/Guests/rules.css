@@ -1,0 +1,47 @@
+﻿body {
+    background-color: #030303;
+}
+
+.btn-standard {
+    width:255px;
+}
+
+p:last-of-type {
+    margin-bottom:45px;
+}
+
+.caption {
+    font-weight: bold;
+    font-size: 22px;
+    letter-spacing: 3px;
+    margin: 33px 0;
+    color:#f4f4f4;
+}
+
+.step-number {
+    display:table;
+    height:28px;
+    width:28px;
+    margin:0 auto 3px;
+}
+
+.step-number > span {
+    display:table-cell;
+    vertical-align:middle;
+    text-align:center;
+    background-color:#e1e1e1;
+    border-radius:50%;
+    font-weight:bold;
+}
+
+.step-text {
+    color: #f4f4f4;
+    font-family: Verdana;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+
+.step-text > span {
+    color: #a7a7a7;
+}

@@ -1,0 +1,119 @@
+﻿@font-face {
+  font-family: 'Helvetica Neue Bold';
+  src: url('../Fonts/helvetica-neue-bold.eot?') format('eot'), url('../Fonts/helvetica-neue-bold.woff') format('woff'), url('../Fonts/helvetica-neue-bold.ttf') format('truetype');
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+/*
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+*/
+
+.navbar-background {
+    background: url("../Images/landing-bg.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width:100%;
+    height:115px;
+    margin-bottom:0;
+}
+
+.navbar-header .icon-bar {
+    background-color:#fff;
+}
+
+.navbar-brand.logo {
+    display:block;
+    margin-top: 2px;
+    margin-left: 10px;
+    font-size:13px;
+    font-style:italic;
+    color:#fff;
+}
+
+.btn-standard,
+.btn-standard:link,
+.btn-standard:focus,
+.btn-standard:hover,
+.btn-standard:active,
+.btn-standard:visited {
+    background-color:#e31524;
+    text-decoration: none;
+    color:#fff;
+    border-radius:0;
+    height:46px;
+    font-family:Arial;
+    font-size:16px;
+    letter-spacing:0.7px;
+    line-height:2;
+}
+
+/*---------------------------*/
+/* M O D A L   D I A L O G S */
+/*---------------------------*/
+/*
+.dlg .modal-header {
+    border-bottom:0;
+    border-radius:6px 6px 0 0;
+    background-repeat: no-repeat;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff6d94bf', endColorstr='#ff3e648d', GradientType=0);
+    -webkit-filter: none;
+    filter: none;
+}
+
+.dlg .modal-body {
+    color:black;
+}
+
+.dlg-primary .modal-header {
+    color: #ffffff;
+    background-color: #446e9b;
+    background-image: -webkit-linear-gradient(#6d94bf, #446e9b 50%, #3e648d);
+    background-image: -o-linear-gradient(#6d94bf, #446e9b 50%, #3e648d);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#6d94bf), color-stop(50%, #446e9b), to(#3e648d));
+    background-image: linear-gradient(#6d94bf, #446e9b 50%, #3e648d);
+    border: 1px solid #345578;
+}
+
+.dlg-danger h4,
+.dlg-primary h4 {
+    color: white;
+}
+
+.dlg-danger .modal-header {
+  color: #ffffff;
+  background-color: #cd0200;
+  background-image: -webkit-linear-gradient(#ff1d1b, #cd0200 50%, #b90200);
+  background-image: -o-linear-gradient(#ff1d1b, #cd0200 50%, #b90200);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff1d1b), color-stop(50%, #cd0200), to(#b90200));
+  background-image: linear-gradient(#ff1d1b, #cd0200 50%, #b90200);
+  border: 1px solid #9a0200;
+}
+
+.dlg-danger h4 {
+    color: white;
+}
+*/

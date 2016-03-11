@@ -1,0 +1,68 @@
+﻿.spinner-3balls {
+    display:none;
+    text-align:center;
+    margin: 0 auto;
+    width: 50px;
+    height:100%;
+}
+
+.spinner-3balls > div {
+  display:inline-block;
+  border-radius: 50%;
+  background-color: #fff;
+  margin:0 2px;
+  width: 10px;
+  height: 10px;
+}
+
+.spinner-3balls > div:nth-of-type(1) {
+  opacity: 0.25;
+  animation: kf-3balls-1 1s infinite linear;
+}
+
+.spinner-3balls > div:nth-of-type(2) {
+  animation: kf-3balls-2 1s infinite linear;
+}
+
+.spinner-3balls > div:nth-of-type(3) {
+  opacity: 0.25;
+  animation: kf-3balls-3 1s infinite linear;
+}
+
+@-webkit-keyframes kf-3balls-1 {
+  33%   {opacity: 0.25;}
+  66%   {opacity: 1;}
+  100%  {opacity: 0.25;}
+}
+
+@keyframes kf-3balls-1 {
+  33%   {opacity: 0.25;}
+  66%   {opacity: 1;}
+  100%  {opacity: 0.25;}
+}
+
+@-webkit-keyframes kf-3balls-2 {
+  0%   {opacity: 1;}
+  33%  {opacity: 0.25;}
+  66%  {opacity: 0.25;}
+  100% {opacity: 1;}
+}
+
+@keyframes kf-3balls-2 {
+  0%   {opacity: 1;}
+  33%  {opacity: 0.25;}
+  66%  {opacity: 0.25;}
+  100% {opacity: 1;}
+}
+
+@-webkit-keyframes kf-3balls-3 {
+  0%   {opacity: 0.25;}
+  33%  {opacity: 1;}
+  66%  {opacity: 0.25;}
+}
+
+@keyframes kf-3balls-3 {
+  0%   {opacity: 0.25;}
+  33%  {opacity: 1;}
+  66%  {opacity: 0.25;}
+}

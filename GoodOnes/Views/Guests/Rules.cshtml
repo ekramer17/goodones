@@ -1,0 +1,37 @@
+﻿@{
+    ViewBag.Title = "Rules";
+}
+
+@section Styles
+{
+    <link type="text/css" rel="stylesheet" href="~/Content/Views/Guests/rules.css">
+}
+
+<div class="text-center">
+
+    <p class="caption">PARTY RULES</p>
+
+    <div class="step-number">
+        <span>1</span>
+    </div>
+
+    <p class="step-text">Bring a Sociable Friend for<br />$20 at the Door</p>
+
+    <div class="step-number">
+        <span>2</span>
+    </div>
+
+    <p class="step-text">
+        Come Dressed Festively with Style
+    </p>
+
+    <div class="step-number">
+        <span>3</span>
+    </div>
+
+    <p class="step-text">Prepare to Talk and Meet some Friendly,<br />Interesting People from Boston</p>
+
+    @Html.ActionLink("RETURN HOME", "Index", "Home", null, new { @class = "btn btn-standard" })
+
+</div>
+

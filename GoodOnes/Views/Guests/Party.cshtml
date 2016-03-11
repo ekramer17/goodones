@@ -1,0 +1,48 @@
+﻿@model GoodOnes.Models.Guests.PartyViewModel
+
+@{
+    ViewBag.Title = "Party";
+}
+
+@section Styles
+{
+    <link type="text/css" rel="stylesheet" href="~/Content/3balls.css">
+    <link type="text/css" rel="stylesheet" href="~/Content/dncalendar.css">
+    <link type="text/css" rel="stylesheet" href="~/Content/Views/Guests/party.css">
+}
+
+<div id="detail-box" class="row text-center">
+    <input type="hidden" id="party-id" value="@Model.Party.ID" />
+    <input type="hidden" id="party-date" value="@Model.Party.Date" />
+    <div class="day-of-week">@Model.DayOfWeek</div>
+    <hr />
+    <div class="event-title">@Model.Party.Title</div>
+    <div class="line1">@Model.Party.Line1</div>
+    <div class="line2">@Model.Party.Line2</div>
+    <a href="#" id="select-link">
+        <div class="spinner-3balls"></div>
+        <span>SELECT</span>
+    </a></div>
+
+<div id="dncalendar-container" class="row dncalendar-container"></div>
+
+@section Scripts
+{
+    <script type="text/javascript" src="~/Scripts/dncalendar.js"></script>
+    <script type="text/javascript" src="~/Scripts/spinner-3balls.js"></script>
+    <script type="text/javascript" src="~/Scripts/Views/Guests/party.js"></script>
+    <script type="text/javascript">
+    var notes = [];
+    var initial = "@Model.Party.Date";
+    var mindate = "@Model.Calendar.MinDate";
+    var maxdate = "@Model.Calendar.MaxDate";
+    var geteventurl = "@Url.Action("GetByDate", "Events", null, Request.Url.Scheme)";
+    var nextpageurl = "@Url.Action("Survey", "Guests", null, Request.Url.Scheme)";
+    var pickpartyurl = "@Url.Action("Party", "Guests", null, Request.Url.Scheme)";
+
+    @foreach (var e in Model.Calendar.Events)
+    {
+        @:notes.push({ "date": "@e.Date" });
+    }
+    </script>
+}

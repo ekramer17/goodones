@@ -1,0 +1,18 @@
+﻿@{
+    ViewBag.Title = "Home";
+}
+
+
+@section Styles
+{
+    <link type="text/css" rel="stylesheet" href="~/Content/Views/Home/index.css">
+}
+
+<div class="logo-main">
+    <img src="~/Images/logo.png" alt="GoodOnes Logo" />
+</div>
+
+<ul class="list-inline text-center">
+    <li><a href="#">MEMBER</a></li>
+    <li>@Html.ActionLink("GUEST", "Index", "Guests")</li>
+</ul>

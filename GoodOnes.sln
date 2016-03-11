@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoodOnes", "GoodOnes\GoodOnes.csproj", "{E07A4DB6-5B6B-47EE-9653-3B93BED2BE9C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoodOnes.Tests", "GoodOnes.Tests\GoodOnes.Tests.csproj", "{992C2C15-467D-432C-9897-B4DF6D897A78}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E07A4DB6-5B6B-47EE-9653-3B93BED2BE9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E07A4DB6-5B6B-47EE-9653-3B93BED2BE9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E07A4DB6-5B6B-47EE-9653-3B93BED2BE9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E07A4DB6-5B6B-47EE-9653-3B93BED2BE9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{992C2C15-467D-432C-9897-B4DF6D897A78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{992C2C15-467D-432C-9897-B4DF6D897A78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{992C2C15-467D-432C-9897-B4DF6D897A78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{992C2C15-467D-432C-9897-B4DF6D897A78}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

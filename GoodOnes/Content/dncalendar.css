@@ -1,0 +1,97 @@
+.dncalendar-container
+{
+    font-family: "arial narrow";
+    background-color: #030303;
+    padding-bottom:15px;
+}
+
+.dncalendar-inactive {
+	opacity: 0.2;
+}
+
+.dncalendar-header {
+    padding: 0;
+    text-align:center;
+	margin: 15px auto;
+    color: #fff;
+}
+
+.dncalendar-header ul li {
+    display:inline-block;
+    letter-spacing: 1.4px;
+    font-size: 15px;
+    vertical-align:middle;
+}
+
+.dncalendar-container .month {
+    cursor: pointer;
+    padding: 0 20px;
+}
+
+.dncalendar-container .month > span {
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    display:block;
+    height:0;
+}
+
+.dncalendar-container .month.prev > span {
+    border-right: 8px solid #fff;
+}
+
+.dncalendar-container .month.next > span {
+    border-left: 8px solid #fff;
+}
+
+.dncalendar-container .month.inactive {
+    visibility:hidden;
+}
+
+.dncalendar-body table {
+	width: 98%;
+    margin:0 auto;
+    text-align: center;
+    border-collapse: collapse;
+    font-size: 15px;
+    color:#fff;
+}
+
+.dncalendar-body table th, td {
+    border: 0;
+	margin: 0;
+    padding: 0;
+    vertical-align: middle;
+}
+
+.dncalendar-body thead td {
+    font-size: 14px;
+    font-family: arial;
+    font-weight: bold;
+    text-transform: uppercase;
+    vertical-align:top;
+    height:30px;
+}
+
+.dncalendar-body tbody tr td {
+	width: 14.286%;
+    height: 40px;
+    font-size: 14px;
+    font-family: arial;
+	text-decoration: none;
+	vertical-align: middle;
+}
+
+.dncalendar-note {
+    width:34px;
+    height:34px;
+    line-height:30px;
+    margin:0 auto;
+    border:2px solid #db1424;
+    border-radius:50%;
+    cursor:pointer;
+}
+
+.dncalendar-note.active {
+    background-color: #db1424;
+}
+
